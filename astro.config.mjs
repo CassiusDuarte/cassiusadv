@@ -3,8 +3,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   output: 'static',
-  site: 'https://cassiusduarte.github.io',
-  base: '/cassiusadv',
+  site: 'https://cassiusduarte.github.io/cassiusadv',
   vite: {
     plugins: [tailwindcss()],
   },
