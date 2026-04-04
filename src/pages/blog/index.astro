@@ -20,8 +20,8 @@ const currentPosts = blogPosts.slice(start, end);
   <section class="px-6 py-20 max-w-7xl mx-auto">
     <Breadcrumbs
       items={[
-        { label: "Inicio", href: "/" },
-        { label: "Blog", href: "/blog" },
+        { label: "Inicio", href: "/cassiusadv" },
+        { label: "Blog", href: "/cassiusadv/blog" },
       ]}
     />
 
@@ -35,6 +35,6 @@ const currentPosts = blogPosts.slice(start, end);
       ))}
     </div>
 
-    <Pagination currentPage={currentPage} totalPages={totalPages} baseUrl="/blog" />
+    <Pagination currentPage={currentPage} totalPages={totalPages} baseUrl="/cassiusadv/blog" />
   </section>
 </Base>
