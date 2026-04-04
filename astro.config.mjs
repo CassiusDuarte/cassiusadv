@@ -5,6 +5,7 @@ export default defineConfig({
   output: 'static',
   site: 'https://cassiusduarte.github.io',
   base: '/cassiusadv',
+  trailingSlash: 'always',
   vite: {
     plugins: [tailwindcss()],
   },
