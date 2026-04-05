@@ -25,17 +25,17 @@ export async function getStaticPaths() {
 const { currentPage, totalPages, posts } = Astro.props;
 ---
 
-<Base title="Blog" meta_title="Legal Blog | Legal Staff">
+<Base title="Blog" meta_title="Blog | CRD Advogado">
   <section class="px-6 py-20 max-w-7xl mx-auto">
     <Breadcrumbs
       items={[
-        { label: "Inicio", href: "/cassiusadv" },
+        { label: "Home", href: "/cassiusadv" },
         { label: "Blog", href: "/cassiusadv/blog/1" },
       ]}
     />
 
     <h1 class="text-center text-[#0B2545] text-3xl md:text-4xl font-extrabold uppercase tracking-[3px] mb-12">
-      Legal Blog — Página {currentPage}
+      Blog — Página {currentPage}
     </h1>
 
     <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">

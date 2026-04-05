@@ -19,7 +19,7 @@ const relatedPosts = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 2);
   <article class="max-w-4xl mx-auto px-6 py-20">
     <Breadcrumbs
       items={[
-        { label: "Inicio", href: "/cassiusadv" },
+        { label: "Home", href: "/cassiusadv" },
         { label: "Blog", href: "/cassiusadv/blog/1" },
         { label: post.title },
       ]}
@@ -40,7 +40,7 @@ const relatedPosts = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 2);
     </p>
 
     <div
-      class="prose prose-lg max-w-none text-gray-800"
+      class="flex flex-col space-y-4 list-decimal prose prose-lg max-w-none text-gray-800"
       set:html={post.content}
     />
 
@@ -48,7 +48,7 @@ const relatedPosts = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 2);
       href="/cassiusadv/blog/1"
       class="inline-block my-6 px-6 py-2 bg-[#0B2545] text-white rounded-full hover:bg-[#F9C74F] hover:text-[#0B2545] transition"
     >
-      Return to Blog
+      Voltar para o Blog
     </a>
 
     <!-- Related Articles -->

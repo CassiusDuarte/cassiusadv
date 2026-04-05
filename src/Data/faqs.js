@@ -1,23 +1,35 @@
 // data/faqs.js
 export const faqs = [
   {
-    question: 'What legal services do you offer?',
+    question: 'Quais são os serviços oferecidos?',
     answer:
-      'We provide advice and representation in civil, criminal, labor, and commercial law, adapting to the needs of each client.',
+      'Nós fornecemos consultoria, negociação e representação jurídica em casos civis relacionados a direitos de TEA e PCD'
   },
   {
-    question: 'How can I request a consultation?',
+    question: 'Como posso solicitar uma consulta?',
     answer:
-      'You can contact us through the form in the contact section or by phone. We will respond promptly to schedule an appointment.',
+      'Acesse o formulário através do menu "Contato" e retornamos em breve, por e-mail e telefone, para marcar uma consulta',
   },
   {
-    question: 'Do you handle cases nationwide?',
+    question: 'Qual é sua base de atendimento?',
     answer:
-      'Yes, we have a presence in various provinces and also provide virtual consultations for clients across the country.',
+      'Atendemos em Paulínia SP e, consequentemente, a região metropolitana de Campinas.',
   },
   {
-    question: 'What is the cost of an initial consultation?',
+    question: 'Estou fora da região. Vocês podem me atender?',
     answer:
-      'The first consultation is free of obligation. Afterwards, we provide a clear quote tailored to your specific case.',
+      'Para consulta, sim. Para representação jurídica em processos judiciais também é possível, mas teremos que analisar a viabilidade.',
+  },
+  {
+    question: 'Qual é o custo da primeira consulta?',
+    answer:
+      'A primeira consulta é determinada pela tabela de honorários da OAB, mas podemos fornecer descontos.',
+  },
+  {
+    question: 'Mas por que vocês cobram a consulta?  Outros profissionais liberais não fazem isso.',
+    answer:
+      'Muitas vezes, o problema do cliente é resolvido já com a consulta. Existem muitas alternativas extrajudiciais que podemos orientar e trazer a solução mais \
+      rápida para o cliente. E os valores financeiros de custo do processo são baseados no tempo do advogado, que é em grande parte dispensado no tratamento de consultas\
+      Além disso, ela é um estímulo para que o advogado possa trabalhar e oferecer a melhor solução, independentemente de processos judiciais.',
   },
 ];

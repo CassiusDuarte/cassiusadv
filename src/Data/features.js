@@ -1,14 +1,15 @@
 export const features = [
   {
-    title: 'Civil Law',
-    description: 'Advisory services in civil and family law cases with proven experience.',
+    title: 'Direito Educacional ',
+    description: 'Consultoria, Negociação e contencioso (processo judicial) na área de direito educacional.',
   },
   {
-    title: 'Criminal Law',
-    description: 'Defense and legal representation in criminal cases.',
+    title: 'Direito Médico',
+    description: 'Consultoria, Negociação e contencioso (processo judicial) na área de direito médico, com foco em TEA e PCD.',
   },
   {
-    title: 'Labor Law',
-    description: 'Consulting on labor disputes and employment contracts.',
+    title: 'Direito TEA',
+    description: 'Foco em Direitos Humanos e Direito Constitucional, para criação de teses originais baseados em tratados internacionais. \
+    Área de grande risco, normalmente com a representação de entidades para processos constitucionais.',
   },
 ];
