@@ -5,15 +5,24 @@ import BlogCard from "../../components/blog/BlogCard.astro";
 import Breadcrumbs from "../../components/blog/Breadcrumbs.astro";
 import Pagination from "../../components/blog/Pagination.astro";
 
-const url = new URL(Astro.request.url);
-const currentPage = parseInt(url.searchParams.get("page") || "1", 10);
 
-const postsPerPage = 6;
-const totalPages = Math.ceil(blogPosts.length / postsPerPage);
 
-const start = (currentPage - 1) * postsPerPage;
-const end = start + postsPerPage;
-const currentPosts = blogPosts.slice(start, end);
+export async function getStaticPaths() {
+
+   const postsPerPage = 4;
+   const totalPages = Math.ceil(blogPosts.length / postsPerPage);
+
+  return Array.from({ length: totalPages }).map((_, i) => ({
+    params: { page: String(i + 1) },
+    props: {
+      currentPage: i + 1,
+      totalPages,
+      posts: blogPosts.slice(i * postsPerPage, (i + 1) * postsPerPage),
+    },
+  }));
+}
+
+const { currentPage, totalPages, posts } = Astro.props;
 ---
 
 <Base title="Blog" meta_title="Legal Blog | Legal Staff">
@@ -21,20 +30,24 @@ const currentPosts = blogPosts.slice(start, end);
     <Breadcrumbs
       items={[
         { label: "Inicio", href: "/cassiusadv" },
-        { label: "Blog", href: "/cassiusadv/blog" },
+        { label: "Blog", href: "/cassiusadv/blog/1" },
       ]}
     />
 
     <h1 class="text-center text-[#0B2545] text-3xl md:text-4xl font-extrabold uppercase tracking-[3px] mb-12">
-      Legal Blog
+      Legal Blog — Página {currentPage}
     </h1>
 
     <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-      {currentPosts.map((post) => (
+      {posts.map((post) => (
         <BlogCard post={post} />
       ))}
     </div>
 
-    <Pagination currentPage={currentPage} totalPages={totalPages} baseUrl="/cassiusadv/blog" />
+    <Pagination
+      currentPage={currentPage}
+      totalPages={totalPages}
+      baseUrl="/cassiusadv/blog"
+    />
   </section>
 </Base>

@@ -20,7 +20,7 @@ const relatedPosts = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 2);
     <Breadcrumbs
       items={[
         { label: "Inicio", href: "/cassiusadv" },
-        { label: "Blog", href: "/cassiusadv/blog" },
+        { label: "Blog", href: "/cassiusadv/blog/1" },
         { label: post.title },
       ]}
     />
@@ -45,7 +45,7 @@ const relatedPosts = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 2);
     />
 
     <a
-      href="/cassiusadv/blog"
+      href="/cassiusadv/blog/1"
       class="inline-block my-6 px-6 py-2 bg-[#0B2545] text-white rounded-full hover:bg-[#F9C74F] hover:text-[#0B2545] transition"
     >
       Return to Blog
