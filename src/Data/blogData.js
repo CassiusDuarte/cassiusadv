@@ -2,7 +2,7 @@ export const blogPosts = [
   {
     id: 1,
     title: "Escola nega disponibilização de assistente especializado. O que fazer?",
-    description: "Quais são as alternativas jurídicas disponíveis para o caso em que a Escola se nega .",
+    description: "Quais são as alternativas jurídicas disponíveis para o caso em que a escola se nega a fornecer o assistente especializado?",
     image: "/cassiusadv/TEA1.png",
     slug: "tea-1",
     date: "04 de Abril de 2026",
